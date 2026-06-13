@@ -1,0 +1,96 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-hidden bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold tracking-widest uppercase text-amber-600">Core Features</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">Built for how the job site actually works</h2>
+    </div>
+
+    <!-- Persona chip -->
+    <div class="flex items-center gap-3 mb-5">
+      <div class="inline-flex items-center gap-2 bg-amber-500 text-white rounded-full px-4 py-1.5 text-xs font-bold shadow-sm">
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+        </svg>
+        Construction Project Manager
+      </div>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-3 flex-1 min-h-0">
+
+      <!-- Milestone Tracker -->
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 flex flex-col gap-2">
+        <div class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-xs">Milestone Tracker</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">Create, assign, and monitor milestones with dependency links. Flag at-risk items before they cascade downstream.</p>
+      </div>
+
+      <!-- Subcontractor Board -->
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 flex flex-col gap-2">
+        <div class="w-7 h-7 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-xs">Subcontractor Board</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">Manage trade schedules with planned vs. actual arrival and completion status. No more chasing via text.</p>
+      </div>
+
+      <!-- Delivery Tracker -->
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 flex flex-col gap-2">
+        <div class="w-7 h-7 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-xs">Material Delivery Tracker</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">Log expected and actual delivery dates. Link deliveries to dependent milestones so gaps surface immediately.</p>
+      </div>
+
+      <!-- Budget Monitor -->
+      <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 flex flex-col gap-2">
+        <div class="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-xs">Budget vs. Actual</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">Track spend against budget at project and phase level. Variance alerts fire before overruns become irreversible.</p>
+      </div>
+
+      <!-- At-Risk Alerts -->
+      <div class="rounded-xl bg-red-50 border border-red-200 p-4 flex flex-col gap-2">
+        <div class="w-7 h-7 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-red-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-xs">At-Risk Alerts</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">Early warning flags for delays likely to cascade to downstream tasks, trades, or material deliveries.</p>
+      </div>
+
+      <!-- Project Dashboard -->
+      <div class="rounded-xl bg-amber-50 border border-amber-200 p-4 flex flex-col gap-2">
+        <div class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+          </svg>
+        </div>
+        <h4 class="font-bold text-slate-900 text-xs">Project Dashboard</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">Single-view health status across all active projects — schedule, budget, deliveries, and sub status at a glance.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
